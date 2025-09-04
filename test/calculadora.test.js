@@ -36,16 +36,19 @@ describe('Testes da função de Soma', function () {
    
    });
 
-   it('A função deve ser capaz de multiplicar dois números', function () {
+ describe('Testes da função de Multiplicação', function () {
+   });
+      it('A função deve ser capaz de multiplicar dois números', function () {
       //Coleta o resultado da função
       const resultadoDaMultiplicacao = multiplicarDoisNumeros(3, 5);
 
       // Compara o resultado com o valor que eu espero
       expect(resultadoDaMultiplicacao).to.equal(15);
-
    });
-
-   it('A função deve ser capaz de dividir dois números', function () {
+ 
+   describe('Teste de função de divisão', function (){
+   });
+      it('A função deve ser capaz de dividir dois números', function () {
       //Coleta o resultado da função
       const resultadoDaDivisão = dividirDoisNumeros(20, 5);
 
@@ -53,9 +56,4 @@ describe('Testes da função de Soma', function () {
       expect(resultadoDaDivisão).to.equal(4);
 
    });
-
 });
-
-
-
-

@@ -16,10 +16,15 @@ function calcularMediaDeDoisNumeros(valor1, valor2) {
 
 function multiplicarDoisNumeros(valor1, valor2) {
    const resultado = valor1 * valor2;
-   return resultado;   
-
+   return resultado;
 }
+
+function dividirDoisNumeros(valor1,valor2) {
+    const resultado = valor1 / valor2;
+    return resultado;
+
+}   
 
 module.exports = {
-    somarDoisNumeros, multiplicarDoisNumeros
-}
+    somarDoisNumeros, multiplicarDoisNumeros, dividirDoisNumeros
+}  

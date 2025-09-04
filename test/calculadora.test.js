@@ -1,4 +1,4 @@
-const { somarDoisNumeros, multiplicarDoisNumeros } = require('../src/calculadora');
+const { somarDoisNumeros, multiplicarDoisNumeros, dividirDoisNumeros } = require('../src/calculadora');
 const { expect } = require('chai');
 
 describe('Testes da função de Soma', function () {
@@ -42,6 +42,15 @@ describe('Testes da função de Soma', function () {
 
       // Compara o resultado com o valor que eu espero
       expect(resultadoDaMultiplicacao).to.equal(15);
+
+   });
+
+   it('A função deve ser capaz de dividir dois números', function () {
+      //Coleta o resultado da função
+      const resultadoDaDivisão = dividirDoisNumeros(20, 5);
+
+      //Compara o resultado com o valor que eu espero
+      expect(resultadoDaDivisão).to.equal(4);
 
    });
 
